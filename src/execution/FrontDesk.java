@@ -12,6 +12,6 @@ public class FrontDesk {
     public static void main(String[] args) {
         Book bookobject = new Book();
         bookobject.getNameOfBooks();
-
+        bookobject.getNameOfAuthors();
     }
 }
