@@ -26,7 +26,7 @@ public class Student {
     public int getNumberOfBooksIssued(){
         return numberOfBooksIssued;
     }
-    public  String getNameOfBooksIssuedByStudent(){
+    public  String[] getNameOfBooksIssuedByStudent(){
         return  getNameOfBooksIssuedByStudent();
     }
 }

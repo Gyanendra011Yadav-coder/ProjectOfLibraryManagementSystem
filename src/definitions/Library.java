@@ -7,4 +7,10 @@
 package definitions;
 
 public class Library {
+
+    private String [] booksCurrentlyAvailable = new String[100];
+
+    public String[] getBooksCurrentlyAvailable (){
+        return booksCurrentlyAvailable;
+    }
 }

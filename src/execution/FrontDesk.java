@@ -7,6 +7,7 @@
 package execution;
 
 import definitions.Book;
+import definitions.Library;
 import definitions.Student;
 
 public class FrontDesk {
@@ -19,10 +20,17 @@ public class FrontDesk {
                         "ISBN CODE OF THE BOOK IS:"+" "+ bookobject.getIsbnNumberOfBooks() );
 //OBEJECT CREATED FOR STUDENT CLASS
         Student studentobject = new Student();
-            studentobject.getNameOfStudent();
-            studentobject.getStudentUniversityRollNo();
-             studentobject.getNumberOfBooksIssued();
-            studentobject.getNameOfBooksIssuedByStudent();
+        System.out.println( "STUDENT NAME:"+" "+studentobject.getNameOfStudent() +",\n"+
+            "STUDENT ROLL NUMBER:"+" "+studentobject.getStudentUniversityRollNo()+",\n"+
+             "ISSUED BOOKS TO"+" "+studentobject.getNameOfStudent()+","+studentobject.getNumberOfBooksIssued()+",\n"+
+            "NAME OF BOOK ISSUED:"+studentobject.getNameOfBooksIssuedByStudent()
+        );
+//NOW WE WILL CREATE A OBJECT OF LIBRARY CLASS AND CALL THEM
+        Library libraryobject = new Library();
+
+        System.out.println("NAME OF BOOKS AVAILABLE IN THE LIBRARY IS:"+" "+libraryobject.getBooksCurrentlyAvailable());
+
+
 
     }
 }
