@@ -12,12 +12,9 @@ public class FrontDesk {
     public static void main(String[] args) {
         Book bookobject = new Book();
         System.out.println(
-                       "BOOK NAME IS:"+" "+bookobject.getNameOfBooks() +","+
-                               "BOOK AUTHOR NAME IS:"+" "+bookobject.getNameOfAuthors() +"," +
-                        "ISBN CODE OF THE BOOK IS:"+" "+ bookobject.getIsbnNumberOfBooks()
-
-
-                );
+                       "BOOK NAME IS:"+" "+bookobject.getNameOfBooks() +",\n"+
+                               "BOOK AUTHOR NAME IS:"+" "+bookobject.getNameOfAuthors() +",\n" +
+                        "ISBN CODE OF THE BOOK IS:"+" "+ bookobject.getIsbnNumberOfBooks() );
 
     }
 }
