@@ -27,6 +27,9 @@ public class FrontDesk {
 //OBEJECT CREATED FOR STUDENT CLASS
 
         Student studentobject = new Student();
+        studentobject.setNameOfStudent("GYAN YADAV");
+        studentobject.setStudentUniversityRollNo(191500309);
+        studentobject.setNumberOfBooksIssued(2);
 //        System.out.println("STUDENT NAME:" + " " + studentobject.getNameOfStudent() + ",\n" +
 //                "STUDENT ROLL NUMBER:" + " " + studentobject.getStudentUniversityRollNo() + ",\n" +
 //                "ISSUED BOOKS TO" + " " + studentobject.getNameOfStudent() + "," + studentobject.getNumberOfBooksIssued() + ",\n" +
