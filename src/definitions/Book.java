@@ -11,32 +11,36 @@ import java.util.Scanner;
 
 public class Book {
 
-   private  String nameOfBooks;
+    private String nameOfBooks;
 
-   private String nameOfAuthors;
-//  since it Should be a of 13 Digits
-   private String isbnNumberOfBooks;
+    private String nameOfAuthors;
+    //  since it Should be a of 13 Digits
+    private String isbnNumberOfBooks;
 
 
-   //CREATING THE GETTER METHOD FOR THE FIELDS
-    public String getNameOfBooks(){
+    //CREATING THE GETTER METHOD FOR THE FIELDS
+    public String getNameOfBooks() {
         return nameOfBooks;
     }
-    public String getNameOfAuthors(){
-        return nameOfAuthors;
-    }
-    public String getIsbnNumberOfBooks(){
-        return isbnNumberOfBooks;
-    }
-// NOW,WE WILL CREATE SETTER METHOD FOR EVERY VARIABLE
-    public  void setNameOfBooks(String nameOfBooks){
+
+    // NOW,WE WILL CREATE SETTER METHOD FOR EVERY VARIABLE
+    public void setNameOfBooks(String nameOfBooks) {
         this.nameOfBooks = nameOfBooks;
     }
 
-    public void setNameOfAuthors(String nameOfAuthors){
+    public String getNameOfAuthors() {
+        return nameOfAuthors;
+    }
+
+    public void setNameOfAuthors(String nameOfAuthors) {
         this.nameOfAuthors = nameOfAuthors;
     }
-    public void setIsbnNumberOfBooks(String isbnNumberOfBooks){
+
+    public String getIsbnNumberOfBooks() {
+        return isbnNumberOfBooks;
+    }
+
+    public void setIsbnNumberOfBooks(String isbnNumberOfBooks) {
         this.isbnNumberOfBooks = isbnNumberOfBooks;
     }
 
