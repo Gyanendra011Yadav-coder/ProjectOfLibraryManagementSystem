@@ -20,6 +20,9 @@ public class Book {
     public String getNameOfBooks(){
         return nameOfBooks;
     }
+    public String getNameOfAuthors(){
+        return nameOfAuthors;
+    }
 
     }
 
