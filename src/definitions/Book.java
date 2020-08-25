@@ -11,10 +11,11 @@ import java.util.Scanner;
 
 public class Book {
 
-    String nameOfBooks;
-    String nameOfAuthors;
-//    since it Should be a of 13 Digits
-    String isbnNumberOfBooks;
+   private  String nameOfBooks;
+   private String nameOfAuthors;
+//  since it Should be a of 13 Digits
+   private String isbnNumberOfBooks;
+
 
     }
 
