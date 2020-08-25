@@ -8,9 +8,13 @@ package definitions;
 
 public class Library {
 
-    private String [] booksCurrentlyAvailable = new String[100];
+    private String[] booksCurrentlyAvailable = new String[100];
 
-    public String[] getBooksCurrentlyAvailable (){
+    public String[] getBooksCurrentlyAvailable() {
         return booksCurrentlyAvailable;
+    }
+
+    public void setBooksCurrentlyAvailable(String[] booksCurrentlyAvailable) {
+        this.booksCurrentlyAvailable = booksCurrentlyAvailable;
     }
 }
