@@ -35,6 +35,8 @@ public class FrontDesk {
 
 //NOW WE WILL CREATE A OBJECT OF LIBRARY CLASS AND CALL THEM
         Library libraryobject = new Library();
+//TAKING THE INPUT OF BOOKS FOR LIBRARY CLASS USING SETTER METHOD
+        libraryobject.setBooksCurrentlyAvailable(["Indian Polity, Modern History"]);
 
         System.out.println("NAME OF BOOKS AVAILABLE IN THE LIBRARY IS:" + " " + libraryobject.getBooksCurrentlyAvailable());
 

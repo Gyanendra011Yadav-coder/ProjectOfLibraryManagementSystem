@@ -8,25 +8,40 @@ package definitions;
 
 public class Student {
     private String nameOfStudent;
-//    private String middleNameOfStudent;
+    //    private String middleNameOfStudent;
 //    private String lastNameOfStudent;
     private long studentUniversityRollNo;
     private int numberOfBooksIssued;
-    private  String[] nameOfBooksIssuedByStudent = new String[100];
+    private String[] nameOfBooksIssuedByStudent = new String[100];
 
 
 //NOW, WE WILL CREATE GETTER METHOD FOR ABOVE FIELDS
 
-    public String getNameOfStudent(){
-         return nameOfStudent;
+    public String getNameOfStudent() {
+        return nameOfStudent;
     }
-    public long getStudentUniversityRollNo(){
-        return  getStudentUniversityRollNo();
+
+    public void setNameOfStudent(String nameOfStudent) {
+        this.nameOfStudent = nameOfStudent;
     }
-    public int getNumberOfBooksIssued(){
+
+    public long getStudentUniversityRollNo() {
+        return getStudentUniversityRollNo();
+    }
+
+    public void setStudentUniversityRollNo(long studentUniversityRollNo) {
+        this.studentUniversityRollNo = studentUniversityRollNo;
+    }
+
+    public int getNumberOfBooksIssued() {
         return numberOfBooksIssued;
     }
-    public  String[] getNameOfBooksIssuedByStudent(){
-        return  getNameOfBooksIssuedByStudent();
+
+    public void setNumberOfBooksIssued(int numberOfBooksIssued) {
+        this.numberOfBooksIssued = numberOfBooksIssued;
+    }
+
+    public String[] getNameOfBooksIssuedByStudent() {
+        return getNameOfBooksIssuedByStudent();
     }
 }
