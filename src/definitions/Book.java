@@ -28,6 +28,18 @@ public class Book {
     public String getIsbnNumberOfBooks(){
         return isbnNumberOfBooks;
     }
-
+// NOW,WE WILL CREATE SETTER METHOD FOR EVERY VARIABLE
+    public  void setNameOfBooks(String nameOfBooks){
+        this.nameOfBooks = nameOfBooks;
     }
+
+    public void setNameOfAuthors(String nameOfAuthors){
+        this.nameOfAuthors = nameOfAuthors;
+    }
+    public void setIsbnNumberOfBooks(String isbnNumberOfBooks){
+        this.isbnNumberOfBooks = isbnNumberOfBooks;
+    }
+
+
+}
 
