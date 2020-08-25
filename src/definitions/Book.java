@@ -17,11 +17,16 @@ public class Book {
 //  since it Should be a of 13 Digits
    private String isbnNumberOfBooks;
 
+
+   //CREATING THE GETTER METHOD FOR THE FIELDS
     public String getNameOfBooks(){
         return nameOfBooks;
     }
     public String getNameOfAuthors(){
         return nameOfAuthors;
+    }
+    public String getIsbnNumberOfBooks(){
+        return isbnNumberOfBooks;
     }
 
     }

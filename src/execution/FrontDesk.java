@@ -11,7 +11,13 @@ import definitions.Book;
 public class FrontDesk {
     public static void main(String[] args) {
         Book bookobject = new Book();
-        bookobject.getNameOfBooks();
-        bookobject.getNameOfAuthors();
+        System.out.println(
+                       "BOOK NAME IS:"+" "+bookobject.getNameOfBooks() +","+
+                               "BOOK AUTHOR NAME IS:"+" "+bookobject.getNameOfAuthors() +"," +
+                        "ISBN CODE OF THE BOOK IS:"+" "+ bookobject.getIsbnNumberOfBooks()
+
+
+                );
+
     }
 }
