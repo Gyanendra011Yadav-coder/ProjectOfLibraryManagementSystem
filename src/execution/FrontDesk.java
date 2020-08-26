@@ -21,5 +21,9 @@ public class FrontDesk {
         Book bookobject = new Book("DBMS" ,"Kneath Rosan","1254788521550");
         System.out.println(bookobject);
 
+
+        Library libraryObject = new Library("Discrete Mathmatics");
+        System.out.println(libraryObject);
+
     }
 }
