@@ -17,7 +17,8 @@ public class Student {
 
 //NOW, WE WILL CREATE GETTER METHOD FOR ABOVE FIELDS
 
-    public Student(String firstNameOfStudent, String secondNameOfStudent, String lastNameOfStudent, long studentUniversityRollNo, int numberOfBooksIssued) {
+    public Student(String firstNameOfStudent, String secondNameOfStudent, String lastNameOfStudent,
+                   long studentUniversityRollNo, int numberOfBooksIssued) {
         this.firstNameOfStudent = firstNameOfStudent;
         this.middleNameOfStudent = middleNameOfStudent;
         this.lastNameOfStudent = lastNameOfStudent;
@@ -35,12 +36,12 @@ public class Student {
         this.firstNameOfStudent = firstNameOfStudent;
     }
 
-    public String getSecondNameOfStudent() {
+    public String getMiddleNameOfStudent() {
         return middleNameOfStudent;
     }
 
-    public void setSecondNameOfStudent(String secondNameOfStudent) {
-        this.middleNameOfStudent = secondNameOfStudent;
+    public void setMiddleNameOfStudent(String middleNameOfStudent) {
+        this.middleNameOfStudent = middleNameOfStudent;
     }
 
     public String getLastNameOfStudent() {

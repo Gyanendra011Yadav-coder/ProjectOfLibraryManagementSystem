@@ -8,25 +8,21 @@ package definitions;
 
 public class Library {
 
-    private String[] booksCurrentlyAvailable = new String[100];
+    private String booksCurrentlyAvailable ;
 
-    public String[] getBooksCurrentlyAvailable() {
+    public String getBooksCurrentlyAvailable() {
         return booksCurrentlyAvailable;
     }
 
-    public void setBooksCurrentlyAvailable(String[] booksCurrentlyAvailable) {
+    public void setBooksCurrentlyAvailable(String booksCurrentlyAvailable) {
         this.booksCurrentlyAvailable = booksCurrentlyAvailable;
     }
 
-    public Library(){
-        for( int i =0 ; i < booksCurrentlyAvailable.length; i++){
-
-            booksCurrentlyAvailable[i] = "Discrete MathMatics";
-            booksCurrentlyAvailable[i+1] ="Operating System";
-            booksCurrentlyAvailable[i+2] ="DataBase Managemnet System";
+    public Library(String booksCurrentlyAvailable ){
+        this.booksCurrentlyAvailable = booksCurrentlyAvailable;
 
         }
 
 
-    }
 }
+
