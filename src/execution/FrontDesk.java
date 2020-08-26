@@ -15,10 +15,10 @@ import java.text.MessageFormat;
 public class FrontDesk {
     public static void main(String[] args) {
 //OBJECT CREATED FOR BOOK
-        Book bookobject = new Book();
-        bookobject.setNameOfBooks("INDIAN POLITY");
-        bookobject.setNameOfAuthors("LAKSMIKANT");
-        bookobject.setIsbnNumberOfBooks("ADERCS12HG23B");
+            Book bookobject = new Book();
+//        bookobject.setNameOfBooks("INDIAN POLITY");
+//        bookobject.setNameOfAuthors("LAKSMIKANT");
+//        bookobject.setIsbnNumberOfBooks("ADERCS12HG23B");
 
         System.out.println(
                         "BOOK NAME IS:" + " " + bookobject.getNameOfBooks() + ",\n" +
@@ -26,20 +26,18 @@ public class FrontDesk {
                         "ISBN CODE OF THE BOOK IS:" + " " + bookobject.getIsbnNumberOfBooks());
 //OBEJECT CREATED FOR STUDENT CLASS
 
-        Student studentobject = new Student();
-        studentobject.setNameOfStudent("GYAN YADAV");
-        studentobject.setStudentUniversityRollNo(191500309);
-        studentobject.setNumberOfBooksIssued(2);
-//        System.out.println("STUDENT NAME:" + " " + studentobject.getNameOfStudent() + ",\n" +
-//                "STUDENT ROLL NUMBER:" + " " + studentobject.getStudentUniversityRollNo() + ",\n" +
+//        Student studentobject = new Student();
+//        studentobject.setNameOfStudent("GYAN YADAV");
+//        studentobject.setStudentUniversityRollNo(191500309);
+//        studentobject.setNumberOfBooksIssued(2);
+//        System.out.println(
+//                "STUDENT NAME:" + " " + studentobject.getNameOfStudent() + ",\n" +
 //                "ISSUED BOOKS TO" + " " + studentobject.getNameOfStudent() + "," + studentobject.getNumberOfBooksIssued() + ",\n" +
 //                "NAME OF BOOK ISSUED:" + studentobject.getNameOfBooksIssuedByStudent()
-//        );
+//                );
 
 //NOW WE WILL CREATE A OBJECT OF LIBRARY CLASS AND CALL THEM
         Library libraryobject = new Library();
-//TAKING THE INPUT OF BOOKS FOR LIBRARY CLASS USING SETTER METHOD
-        libraryobject.setBooksCurrentlyAvailable(["Indian Polity, Modern History"]);
 
         System.out.println("NAME OF BOOKS AVAILABLE IN THE LIBRARY IS:" + " " + libraryobject.getBooksCurrentlyAvailable());
 

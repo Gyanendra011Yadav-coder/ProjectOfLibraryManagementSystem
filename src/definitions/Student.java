@@ -12,7 +12,7 @@ public class Student {
 //    private String lastNameOfStudent;
     private long studentUniversityRollNo;
     private int numberOfBooksIssued;
-    private String[] nameOfBooksIssuedByStudent = new String[100];
+    private String[] nameOfBooksIssuedByStudent = new String[nameOfStudent.length()];
 
 
 //NOW, WE WILL CREATE GETTER METHOD FOR ABOVE FIELDS

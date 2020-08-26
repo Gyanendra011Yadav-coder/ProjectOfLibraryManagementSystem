@@ -43,6 +43,11 @@ public class Book {
     public void setIsbnNumberOfBooks(String isbnNumberOfBooks) {
         this.isbnNumberOfBooks = isbnNumberOfBooks;
     }
+    public Book(){
+        this.nameOfBooks = "DISCRETE MATHEMATICS";
+        this.nameOfAuthors = "KNEATH ROSAN";
+        this.isbnNumberOfBooks = "4858147954410";
+    }
 
 
 }
