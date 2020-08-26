@@ -25,5 +25,9 @@ public class FrontDesk {
         Library libraryObject = new Library("Discrete Mathmatics");
         System.out.println(libraryObject);
 
+
+        Student studentObject = new Student("GYAN","YADAV","YADUVANSHI",
+                191500309 ,11);
+        System.out.println(studentObject);
     }
 }
