@@ -18,14 +18,15 @@ public class Library {
         this.booksCurrentlyAvailable = booksCurrentlyAvailable;
     }
 
+    public Library(){
+        for( int i =0 ; i < booksCurrentlyAvailable.length; i++){
 
-//    public Library(){
-//        for ( int i =0 ; i < booksCurrentlyAvailable.length; i++){
-//
-//            this.booksCurrentlyAvailable[i] = "Discrete MathMatics";
-//            this.booksCurrentlyAvailable[i+1] ="Operating System";
-//            this.booksCurrentlyAvailable[i+2] ="DataBase Managemnet System";
-//
-//        }
-//    }
+            booksCurrentlyAvailable[i] = "Discrete MathMatics";
+            booksCurrentlyAvailable[i+1] ="Operating System";
+            booksCurrentlyAvailable[i+2] ="DataBase Managemnet System";
+
+        }
+
+
+    }
 }

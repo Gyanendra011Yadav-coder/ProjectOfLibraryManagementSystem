@@ -7,22 +7,48 @@
 package definitions;
 
 public class Student {
-    private String nameOfStudent;
-    //    private String middleNameOfStudent;
-//    private String lastNameOfStudent;
+    private String firstNameOfStudent;
+    private String middleNameOfStudent;
+    private String lastNameOfStudent;
     private long studentUniversityRollNo;
     private int numberOfBooksIssued;
-    private String[] nameOfBooksIssuedByStudent = new String[nameOfStudent.length()];
+    private String[] nameOfBooksIssuedByStudent = new String[100];
 
 
 //NOW, WE WILL CREATE GETTER METHOD FOR ABOVE FIELDS
 
-    public String getNameOfStudent() {
-        return nameOfStudent;
+    public Student(String firstNameOfStudent, String secondNameOfStudent, String lastNameOfStudent, long studentUniversityRollNo, int numberOfBooksIssued) {
+        this.firstNameOfStudent = firstNameOfStudent;
+        this.middleNameOfStudent = middleNameOfStudent;
+        this.lastNameOfStudent = lastNameOfStudent;
+        this.studentUniversityRollNo = studentUniversityRollNo;
+        this.numberOfBooksIssued = numberOfBooksIssued;
+
+
     }
 
-    public void setNameOfStudent(String nameOfStudent) {
-        this.nameOfStudent = nameOfStudent;
+    public String getFirstNameOfStudent() {
+        return firstNameOfStudent;
+    }
+
+    public void setFirstNameOfStudent(String firstNameOfStudent) {
+        this.firstNameOfStudent = firstNameOfStudent;
+    }
+
+    public String getSecondNameOfStudent() {
+        return middleNameOfStudent;
+    }
+
+    public void setSecondNameOfStudent(String secondNameOfStudent) {
+        this.middleNameOfStudent = secondNameOfStudent;
+    }
+
+    public String getLastNameOfStudent() {
+        return lastNameOfStudent;
+    }
+
+    public void setLastNameOfStudent(String lastNameOfStudent) {
+        this.lastNameOfStudent = lastNameOfStudent;
     }
 
     public long getStudentUniversityRollNo() {
