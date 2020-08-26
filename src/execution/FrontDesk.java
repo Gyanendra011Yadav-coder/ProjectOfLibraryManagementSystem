@@ -11,11 +11,15 @@ import definitions.Library;
 import definitions.Student;
 
 import java.text.MessageFormat;
+import java.util.Scanner;
 
 public class FrontDesk {
     public static void main(String[] args) {
+        Scanner scannerObject = new Scanner(System.in);
 //OBJECT CREATED FOR BOOK
-            Book bookobject = new Book();
+        System.out.println("ENTER THE NAME OF THE BOOK, " +
+                "NAME OF AUTHOR , AND PROVIDE ISBN NUMBER OF BOOK");
+            Book bookobject = new Book(scannerObject.nextLine(),scannerObject.nextLine(),scannerObject.nextLine());
 //        bookobject.setNameOfBooks("INDIAN POLITY");
 //        bookobject.setNameOfAuthors("LAKSMIKANT");
 //        bookobject.setIsbnNumberOfBooks("ADERCS12HG23B");
@@ -37,9 +41,9 @@ public class FrontDesk {
 //                );
 
 //NOW WE WILL CREATE A OBJECT OF LIBRARY CLASS AND CALL THEM
-        Library libraryobject = new Library();
-
-        System.out.println("NAME OF BOOKS AVAILABLE IN THE LIBRARY IS:" + " " + libraryobject.getBooksCurrentlyAvailable());
+//        Library libraryobject = new Library();
+//
+//        System.out.println("NAME OF BOOKS AVAILABLE IN THE LIBRARY IS:" + " " + libraryobject.getBooksCurrentlyAvailable());
 
 //CREATING A FIELD TO STORE THE INFORMATION OF THE STUDENT
 

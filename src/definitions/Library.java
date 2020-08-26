@@ -17,4 +17,15 @@ public class Library {
     public void setBooksCurrentlyAvailable(String[] booksCurrentlyAvailable) {
         this.booksCurrentlyAvailable = booksCurrentlyAvailable;
     }
+
+
+//    public Library(){
+//        for ( int i =0 ; i < booksCurrentlyAvailable.length; i++){
+//
+//            this.booksCurrentlyAvailable[i] = "Discrete MathMatics";
+//            this.booksCurrentlyAvailable[i+1] ="Operating System";
+//            this.booksCurrentlyAvailable[i+2] ="DataBase Managemnet System";
+//
+//        }
+//    }
 }

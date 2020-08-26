@@ -10,6 +10,7 @@ import javax.xml.namespace.QName;
 import java.util.Scanner;
 
 public class Book {
+    Scanner scannerObject = new Scanner(System.in);
 
     private String nameOfBooks;
 
@@ -43,10 +44,18 @@ public class Book {
     public void setIsbnNumberOfBooks(String isbnNumberOfBooks) {
         this.isbnNumberOfBooks = isbnNumberOfBooks;
     }
+
     public Book(){
         this.nameOfBooks = "DISCRETE MATHEMATICS";
         this.nameOfAuthors = "KNEATH ROSAN";
         this.isbnNumberOfBooks = "4858147954410";
+    }
+    public  Book(String nameOfBooks , String nameOfAuthors,String isbnNumberOfBooks){
+        this.nameOfBooks = nameOfBooks;
+        this.nameOfAuthors = nameOfAuthors;
+        this.isbnNumberOfBooks = isbnNumberOfBooks;
+
+
     }
 
 
