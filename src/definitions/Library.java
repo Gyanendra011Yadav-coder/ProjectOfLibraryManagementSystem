@@ -1,10 +1,12 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
+ *  User: Gyanendra Yadav (Gyanendra011Yadav-coder)
  *  Date: 21/08/20
  *  Time: 3:50 PM
  *  File Name : Library.java
  * */
 package definitions;
+
+import java.util.Objects;
 
 public class Library {
 
@@ -26,6 +28,17 @@ public class Library {
         return "THE BOOKS AVAILABLE ARE:" + " " + getBooksCurrentlyAvailable();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Library library = (Library) o;
+        return Objects.equals(getBooksCurrentlyAvailable(), library.getBooksCurrentlyAvailable());
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBooksCurrentlyAvailable());
+    }
 }
 
