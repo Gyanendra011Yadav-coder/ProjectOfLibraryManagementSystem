@@ -34,6 +34,20 @@ public class FrontDesk {
         int choice = scannerObject.nextInt();
 
 
+        switch (choice){
+            case ISSUE_A_BOOK:
+                break;
+            case RETURN_PREVIOUSLY_ISSUED_BOOKS:
+                break;
+            case SHOW_ALL_BOOKS_ISSUED:
+                break;
+            case EXIT:
+                break;
+
+
+
+        }
+
 
 
 //        Scanner scannerObject = new Scanner(System.in);
