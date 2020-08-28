@@ -11,7 +11,12 @@ import java.util.Objects;
 
 public class Library {
 
-    private  Book[] booksCurrentlyAvailable;
+    private Book[] booksCurrentlyAvailable;
+
+    //created the constructor
+    public Library() {
+        this.booksCurrentlyAvailable = new Book[20];
+    }
 
     public Book[] getBooksCurrentlyAvailable() {
         return booksCurrentlyAvailable.clone();
@@ -23,9 +28,7 @@ public class Library {
 
     @Override
     public String toString() {
-        return "Library{" +
-                "booksCurrentlyAvailable=" + Arrays.toString(booksCurrentlyAvailable) +
-                '}';
+        return Arrays.toString(booksCurrentlyAvailable);
     }
 
     @Override
@@ -40,5 +43,7 @@ public class Library {
     public int hashCode() {
         return Arrays.hashCode(getBooksCurrentlyAvailable());
     }
+
+
 }
 
