@@ -16,18 +16,25 @@ import java.util.Scanner;
 
 public class FrontDesk {
     public static void main(String[] args) {
-        Scanner scannerObject = new Scanner(System.in);
-//OBJECT CREATED FOR BOOK
-        Book bookobject = new Book("DBMS" ,"Kneath Rosan","1254788521550");
-        System.out.println(bookobject);
+        System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
+        System.out.println("How may I help you today?");
+        System.out.println("1. Issue a new book for me.");
+        System.out.println("2. Return a previously issues book for me.");
+        System.out.println("3. Show me all my issues books.");
+        System.out.println("4. Exit.");
 
 
-        Library libraryObject = new Library("Discrete Mathmatics");
-        System.out.println(libraryObject);
-
-
-        Student studentObject = new Student("GYAN","YADAV","YADUVANSHI",
-                191500309 ,11);
-        System.out.println(studentObject);
+//        Scanner scannerObject = new Scanner(System.in);
+////OBJECT CREATED FOR BOOK
+//        Book bookobject = new Book();
+//        System.out.println(bookobject);
+//
+//
+//        Library libraryObject = new Library();
+//        System.out.println(libraryObject);
+//
+//
+//        Student studentObject = new Student();
+//        System.out.println(studentObject);
     }
 }
