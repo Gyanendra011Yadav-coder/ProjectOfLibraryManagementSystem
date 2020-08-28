@@ -22,6 +22,11 @@ public class FrontDesk {
         System.out.println("2. Return a previously issues book for me.");
         System.out.println("3. Show me all my issues books.");
         System.out.println("4. Exit.");
+        System.out.println("ENTER YOUR CHOICE FROM: [1,2,3,4]");
+        Scanner scannerObject = new Scanner(System.in);
+
+        int choice = scannerObject.nextInt();
+
 
 
 //        Scanner scannerObject = new Scanner(System.in);
