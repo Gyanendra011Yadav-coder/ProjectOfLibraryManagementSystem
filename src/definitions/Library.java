@@ -44,6 +44,16 @@ public class Library {
         return Arrays.hashCode(getBooksCurrentlyAvailable());
     }
 
+    /**
+     * GOING TO CREATE A METHOD, SO THAT ANY ONE IS ABLE TO STORE THE
+     * BOOKS IN THE LIBRARY,
+     * @addBooks TO STORE THE BOOKS IN
+     */
+
+    public void addBooks (String bookName){
+        System.out.println(bookName +",is added Succefully.");
+    }
+
 
 }
 
