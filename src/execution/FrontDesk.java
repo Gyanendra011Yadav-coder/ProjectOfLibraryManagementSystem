@@ -27,15 +27,9 @@ public class FrontDesk {
 
 //OBJECT CREATED FOR BOOK
         Book bookobject = new Book();
-        System.out.println(bookobject);
-
-
         Library libraryObject = new Library();
-        System.out.println(libraryObject);
-
-
         Student studentObject = new Student();
-        System.out.println(studentObject);
+
 
         System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
         System.out.println("How may I help you today?");
@@ -47,19 +41,31 @@ public class FrontDesk {
         Scanner scannerObject = new Scanner(System.in);
 
         int choice = scannerObject.nextInt();
-
+        String bookName;
+        int booksIssued;
 
         switch (choice) {
             case ISSUE_A_BOOK:
+                System.out.println("ENTER THE NAME OF BOOK, YOU WANT TO ISSUE:");
+                bookName = scannerObject.nextLine();
+                scannerObject.nextLine();
+                libraryObject.doCheckOut(bookName);
                 break;
             case RETURN_PREVIOUSLY_ISSUED_BOOKS:
+                System.out.println("ENTER THE NAME OF BOOK,YOU WANT TO RETURN:");
+                scannerObject.nextLine();
+                bookName = scannerObject.nextLine();
+               libraryObject.doReturn(bookName);
                 break;
             case SHOW_ALL_BOOKS_ISSUED:
+//                System.out.println("ENTER THE NUMBER OF BOOKS ISSUED");
+//                booksIssued = scannerObject.nextInt();
+                studentObject.getBooksIssuedByStudent();
                 break;
             case EXIT:
                 break;
         }
 
-
+    scannerObject.close();
     }
 }
