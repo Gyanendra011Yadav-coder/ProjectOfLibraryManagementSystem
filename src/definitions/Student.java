@@ -15,7 +15,7 @@ public class Student {
     private String lastNameOfStudent;
     private long studentUniversityRollNo;
     private int numberOfBooksIssued;
-    private String[] nameOfBooksIssuedByStudent = new String[100];
+    private Book[] BooksIssuedByStudent ;
 
 
 //NOW, WE WILL CREATE GETTER METHOD FOR ABOVE FIELDS
@@ -63,18 +63,22 @@ public class Student {
         this.studentUniversityRollNo = studentUniversityRollNo;
     }
 
-    public int getNumberOfBooksIssued() {
-        return numberOfBooksIssued;
+    public Student(){
+        this.BooksIssuedByStudent = new Book[20];
+    }
+
+    public Book[] getBooksIssuedByStudent() {
+        return BooksIssuedByStudent.clone();
     }
 
     public void setNumberOfBooksIssued(int numberOfBooksIssued) {
         this.numberOfBooksIssued = numberOfBooksIssued;
     }
 
-    public String[] getNameOfBooksIssuedByStudent() {
-        return getNameOfBooksIssuedByStudent();
+    @Override
+    public String toString() {
+        return Arrays.toString(BooksIssuedByStudent);
     }
-
 
     @Override
     public boolean equals(Object o) {
@@ -82,17 +86,17 @@ public class Student {
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
         return getStudentUniversityRollNo() == student.getStudentUniversityRollNo() &&
-                getNumberOfBooksIssued() == student.getNumberOfBooksIssued() &&
+                numberOfBooksIssued == student.numberOfBooksIssued &&
                 Objects.equals(getFirstNameOfStudent(), student.getFirstNameOfStudent()) &&
                 Objects.equals(getMiddleNameOfStudent(), student.getMiddleNameOfStudent()) &&
                 Objects.equals(getLastNameOfStudent(), student.getLastNameOfStudent()) &&
-                Arrays.equals(getNameOfBooksIssuedByStudent(), student.getNameOfBooksIssuedByStudent());
+                Arrays.equals(BooksIssuedByStudent, student.BooksIssuedByStudent);
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(getFirstNameOfStudent(), getMiddleNameOfStudent(), getLastNameOfStudent(), getStudentUniversityRollNo(), getNumberOfBooksIssued());
-        result = 31 * result + Arrays.hashCode(getNameOfBooksIssuedByStudent());
+        int result = Objects.hash(getFirstNameOfStudent(), getMiddleNameOfStudent(), getLastNameOfStudent(), getStudentUniversityRollNo(), numberOfBooksIssued);
+        result = 31 * result + Arrays.hashCode(BooksIssuedByStudent);
         return result;
     }
 }

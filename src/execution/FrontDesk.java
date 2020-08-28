@@ -17,11 +17,26 @@ import java.util.Scanner;
 
 public class FrontDesk {
     private static final int ISSUE_A_BOOK = 1;
-    private static final int RETURN_PREVIOUSLY_ISSUED_BOOKS =2;
+    private static final int RETURN_PREVIOUSLY_ISSUED_BOOKS = 2;
     private static final int SHOW_ALL_BOOKS_ISSUED = 3;
-    public static final int  EXIT =4;
+    public static final int EXIT = 4;
 
     public static void main(String[] args) {
+
+
+
+//OBJECT CREATED FOR BOOK
+        Book bookobject = new Book();
+        System.out.println(bookobject);
+
+
+        Library libraryObject = new Library();
+        System.out.println(libraryObject);
+
+
+        Student studentObject = new Student();
+        System.out.println(studentObject);
+
         System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
         System.out.println("How may I help you today?");
         System.out.println("1. Issue a new book for me.");
@@ -34,7 +49,7 @@ public class FrontDesk {
         int choice = scannerObject.nextInt();
 
 
-        switch (choice){
+        switch (choice) {
             case ISSUE_A_BOOK:
                 break;
             case RETURN_PREVIOUSLY_ISSUED_BOOKS:
@@ -43,24 +58,8 @@ public class FrontDesk {
                 break;
             case EXIT:
                 break;
-
-
-
         }
 
 
-
-//        Scanner scannerObject = new Scanner(System.in);
-////OBJECT CREATED FOR BOOK
-//        Book bookobject = new Book();
-//        System.out.println(bookobject);
-//
-//
-//        Library libraryObject = new Library();
-//        System.out.println(libraryObject);
-//
-//
-//        Student studentObject = new Student();
-//        System.out.println(studentObject);
     }
 }
