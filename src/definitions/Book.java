@@ -63,6 +63,13 @@ public class Book {
                 + "ISBN Code Of The Book:" + " " + this.isbnNumberOfBooks + ".";
     }
 
+    public void doCheckout(){
+        System.out.println("THANK YOU FOR RENTING A BOOK.");
+    }
+    public void doReturn(){
+        System.out.println("THANK YOU FOR RETURNING THE BOOK.");
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

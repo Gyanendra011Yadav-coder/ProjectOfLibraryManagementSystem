@@ -6,39 +6,39 @@
  * */
 package definitions;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Library {
 
-    private String booksCurrentlyAvailable;
+    private  Book[] booksCurrentlyAvailable;
 
-    public Library(String booksCurrentlyAvailable) {
+    public Book[] getBooksCurrentlyAvailable() {
+        return booksCurrentlyAvailable.clone();
+    }
+
+    public void setBooksCurrentlyAvailable(Book[] booksCurrentlyAvailable) {
         this.booksCurrentlyAvailable = booksCurrentlyAvailable;
-    }
-
-    public String getBooksCurrentlyAvailable() {
-        return booksCurrentlyAvailable;
-    }
-
-    public void setBooksCurrentlyAvailable(String booksCurrentlyAvailable) {
-        this.booksCurrentlyAvailable = booksCurrentlyAvailable;
-    }
-
-    public String toString() {
-        return "THE BOOKS AVAILABLE ARE:" + " " + getBooksCurrentlyAvailable();
     }
 
     @Override
-    public boolean equals(Object object) {
-        if (this == object) return true;
-        if (object == null || getClass() != object.getClass()) return false;
-        Library library = (Library) object;
-        return Objects.equals(getBooksCurrentlyAvailable(), library.getBooksCurrentlyAvailable());
+    public String toString() {
+        return "Library{" +
+                "booksCurrentlyAvailable=" + Arrays.toString(booksCurrentlyAvailable) +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Library library = (Library) o;
+        return Arrays.equals(getBooksCurrentlyAvailable(), library.getBooksCurrentlyAvailable());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getBooksCurrentlyAvailable());
+        return Arrays.hashCode(getBooksCurrentlyAvailable());
     }
 }
 
