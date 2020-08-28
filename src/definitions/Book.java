@@ -64,24 +64,18 @@ public class Book {
     }
 
     @Override
-    public boolean equals(Object object) {
-        if (this == object)
-            return true;
-        if (object == null || getClass() != object.getClass())
-            return false;
-        Book book = (Book) object;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
         return Objects.equals(getNameOfBooks(), book.getNameOfBooks()) &&
                 Objects.equals(getNameOfAuthors(), book.getNameOfAuthors()) &&
-                Objects.equals(getIsbnNumberOfBooks(),
-                        book.getIsbnNumberOfBooks());
+                Objects.equals(getIsbnNumberOfBooks(), book.getIsbnNumberOfBooks());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getNameOfBooks(), getNameOfAuthors(),
-                getIsbnNumberOfBooks());
+        return Objects.hash(getNameOfBooks(), getNameOfAuthors(), getIsbnNumberOfBooks());
     }
-
-
 }
 
