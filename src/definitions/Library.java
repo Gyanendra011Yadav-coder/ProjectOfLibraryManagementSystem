@@ -66,7 +66,15 @@ public class Library {
     public  void doReturn(String bookName){
         System.out.println(bookName+",is Returned Succesfully.");
     }
-
+    /**
+     * this will Print all the elements Of the Arrays.
+     * we are using foreach loop to print the Array.
+     */
+    public void listBooks(){
+        for (Book bookObject: this.booksCurrentlyAvailable) {
+            System.out.println(bookObject);
+        }
+    }
 
 }
 
