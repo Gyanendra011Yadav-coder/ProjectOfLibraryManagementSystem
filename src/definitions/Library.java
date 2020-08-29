@@ -19,9 +19,9 @@ public class Library {
 //        for (int i = 0; i < Book.length(); i++) {
 //
 //        }
-        this.booksCurrentlyAvailable[0] = new Book("Operating System","GS GHOSH","1455982872575");
-        this.booksCurrentlyAvailable[1] = new Book("DBMS","UDHAPA REDDY","568522265256852");
-        this.booksCurrentlyAvailable[2] = new Book("OOPs","NARSHIMA RAO","32257024450855");
+        this.booksCurrentlyAvailable[0] = new Book("Operating System", "GS GHOSH", "1455982872575");
+        this.booksCurrentlyAvailable[1] = new Book("DBMS", "UDHAPA REDDY", "568522265256852");
+        this.booksCurrentlyAvailable[2] = new Book("OOPs", "NARSHIMA RAO", "32257024450855");
     }
 
     public Book[] getBooksCurrentlyAvailable() {
@@ -65,7 +65,7 @@ public class Library {
      * THIS METHOD WILL ALLOW US TO ISSUE A BOOK FROM THE LIBRARY
      */
     public void doCheckOut(String bookName) {
-        System.out.println( bookName + ",is Issued To You Successfully.");
+        System.out.println(bookName + ",is Issued To You Successfully.");
     }
 
     /**
