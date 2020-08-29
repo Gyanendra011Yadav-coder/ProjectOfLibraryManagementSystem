@@ -1,5 +1,5 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
+ *  User: GYANENDRA YADAV(Gyanendra011Yadav-coder)
  *  Date: 21/08/20
  *  Time: 3:50 PM
  *  File Name : FrontDesk.java
@@ -17,10 +17,10 @@ import java.util.PrimitiveIterator;
 import java.util.Scanner;
 
 public class FrontDesk {
+    public static final int EXIT = 4;
     private static final int ISSUE_A_BOOK = 1;
     private static final int RETURN_PREVIOUSLY_ISSUED_BOOKS = 2;
     private static final int SHOW_ALL_BOOKS_ISSUED = 3;
-    public static final int EXIT = 4;
 
     public static void main(String[] args) {
         Scanner scannerObject = new Scanner(System.in);
@@ -41,7 +41,7 @@ public class FrontDesk {
 
         scannerObject.nextLine();
 
-        System.out.println("-=-=--=-=-\"Welcome,"+firstname +",To The Front Desk\"-=-=--=-=-");
+        System.out.println("-=-=--=-=-\"Welcome," + firstname + ",To The Front Desk\"-=-=--=-=-");
         System.out.println("How may I help you today?");
         System.out.println("1. Issue a new book for me.");
         System.out.println("2. Return a previously issues book for me.");
@@ -53,7 +53,7 @@ public class FrontDesk {
         int choice = scannerObject.nextInt();
         String bookName;
         int booksIssued;
-        if(choice <=4 ) {
+        if (choice <= 4) {
 
             switch (choice) {
                 case ISSUE_A_BOOK:
@@ -76,13 +76,13 @@ public class FrontDesk {
                 case EXIT:
                     break;
             }
-        }else {
+        } else {
             System.out.println("PLEASE CHOOSE THE CORRECT OPTION???");
         }
         scannerObject.close();
-        }
-
-
     }
+
+
+}
 
 
