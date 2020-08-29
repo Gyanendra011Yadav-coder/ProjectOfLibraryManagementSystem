@@ -63,10 +63,11 @@ public class Book {
                 + "ISBN Code Of The Book:" + " " + this.isbnNumberOfBooks + ".";
     }
 
-    public void doCheckout(){
+    public void doCheckout() {
         System.out.println("THANK YOU FOR RENTING A BOOK.");
     }
-    public void doReturn(){
+
+    public void doReturn() {
         System.out.println("THANK YOU FOR RETURNING THE BOOK.");
     }
 
