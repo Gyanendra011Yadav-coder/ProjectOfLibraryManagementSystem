@@ -65,7 +65,7 @@ public class Library {
      * THIS METHOD WILL ALLOW US TO ISSUE A BOOK FROM THE LIBRARY
      */
     public void doCheckOut(String bookName) {
-        System.out.println(" "+bookName + ",is Issued To You Successfully.");
+        System.out.println( bookName + ",is Issued To You Successfully.");
     }
 
     /**
